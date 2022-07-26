@@ -1,0 +1,68 @@
+.profil__section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+.profil__image {
+  margin-bottom: 1rem;
+}
+.f__name-title,
+.l__name-title {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  text-align: center;
+  letter-spacing: 1px;
+  // font-style: italic;
+}
+.email__name-title,
+.number__name-title {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+.btn__close,
+.btn__save {
+  border: none;
+  color: #fff;
+  padding: 0.8rem 1.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+.btn__items-modal {
+  display: flex;
+  justify-content: end;
+  margin-top: 2rem;
+}
+
+.btn__close {
+  background-color: #870000;
+  &:hover {
+    background-color: rgba(135, 0, 0, 0.7);
+  }
+}
+.btn__save {
+  background-color: rgb(0, 0, 81);
+  margin-left: 2rem;
+  opacity: 0.5;
+  cursor: no-drop;
+  &:hover {
+    background-color: rgba(0, 0, 81, 0.7);
+  }
+}
+.btn_save--opacity {
+  opacity: 1;
+  cursor: pointer;
+}
+.bi-envelope-fill,
+.bi-telephone-fill,
+.bi-telephone-plus-fill,
+.bi-telephone-x-fill {
+  font-size: 2.5rem;
+  margin-right: 1.5rem;
+  color: rgb(34, 45, 50);
+}

@@ -1,0 +1,23 @@
+.btn__orange {
+  border: none;
+  outline: none;
+  background-color: rgb(34, 45, 50);
+  padding: 1.2rem 3.2rem;
+  color: #f9d342;
+  font-size: 1.4rem;
+  font-weight: 400;
+  border-radius: 8px;
+  letter-spacing: 1px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  text-transform: uppercase;
+  &:hover {
+    color: rgb(34, 45, 50);
+    border: 1px solid #222d32;
+    background-color: #ffffff;
+  }
+}
+.btn-block {
+  display: block;
+}

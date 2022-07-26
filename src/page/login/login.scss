@@ -1,0 +1,97 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9d342;
+  &__wrapper {
+    width: 46rem;
+    border: 1px solid #dadbde;
+    background: rgb(34, 45, 50);
+    padding: 6rem;
+    border-radius: 1.5rem;
+  }
+  &__form {
+    text-align: center;
+    &-title {
+      text-align: center;
+      font-size: 4rem;
+      color: #f9d342;
+    }
+    &-control {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+      & label {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+        text-align: start;
+        color: #f9d342;
+      }
+      & input {
+        outline: none;
+        border: none;
+        border: 1px solid #dadbde;
+        padding: 1rem;
+        border-bottom-right-radius: 1.5rem;
+        border-top-left-radius: 1.5rem;
+        transition: all 0.3s ease-in-out;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.6rem;
+        &:focus {
+          border-bottom-left-radius: 1.5rem;
+          border-top-right-radius: 1.5rem;
+          border-bottom-right-radius: 0;
+          border-top-left-radius: 0;
+        }
+      }
+    }
+    &-btn {
+      display: flex;
+      align-items: center;
+      border: none;
+      outline: none;
+      padding: 0.6rem 3rem;
+      border-radius: 0.4rem;
+      border: 1px solid #f9d342;
+      background-color: rgb(34, 45, 50);
+      color: #f9d342;
+      font-size: 1.6rem;
+      cursor: pointer;
+      font-weight: 500;
+      transition: all 0.5s ease-in-out;
+      letter-spacing: 1px;
+      &:hover {
+        background-color: #f9d342;
+        color: rgb(34, 45, 50);
+      }
+    }
+  }
+}
+.login__form-btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.login__form-control.invalid input {
+  border-color: red;
+  background: #dfc1c1;
+}
+.error_text {
+  color: red;
+  font-size: 1.4rem;
+  text-align: start;
+  margin-bottom: 1rem;
+  // letter-spacing: 0.099rem;
+  letter-spacing: 0.9px;
+  animation: error_text 0.8s ease-in-out;
+}
+@keyframes error_text {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}

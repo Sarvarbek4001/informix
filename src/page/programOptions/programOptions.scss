@@ -1,0 +1,47 @@
+.program__options--lists {
+  margin-top: 4rem;
+  background-color: #ffffff;
+  padding: 2rem 3rem 2rem 3rem;
+  border-radius: 4px;
+}
+.program__options--list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 0 0.8rem 0;
+  border-bottom: 1px solid black;
+  & p {
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+  }
+}
+.program__options-update-btn {
+  margin-right: 1rem;
+  border: none;
+  outline: none;
+  padding: 0.7rem;
+  border-radius: 4px;
+  background-color: rgb(34, 44, 55);
+  color: #f9d342;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.15);
+    background-color: rgba(34, 44, 55, 0.7);
+  }
+}
+.program__options-delete-btn {
+  border: none;
+  outline: none;
+  padding: 0.7rem;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: brown;
+  color: #f9d342;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.15);
+    background-color: rgba(165, 42, 42, 0.7);
+  }
+}

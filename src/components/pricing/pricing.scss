@@ -1,0 +1,134 @@
+.pricing__section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &-card {
+    width: 28rem;
+    min-height: 66rem;
+    background-color: #ffffff;
+    margin-top: 3.2rem;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: rgb(34, 45, 50);
+      color: #f9d342;
+      transform: translateY(-2rem);
+    }
+  }
+  &__intro {
+    text-align: center;
+    padding: 2.5rem 7.5rem 3.2rem 7.5rem;
+    border-bottom: 1px solid rgba(135, 137, 147, 0.4);
+    &-text1 {
+      color: #ff8a65;
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+      margin-bottom: 0.8rem;
+    }
+    &-price {
+      font-size: 4.6rem;
+      font-weight: 700;
+      line-height: 5.5rem;
+    }
+    &-text2 {
+      color: #878993;
+      font-size: 1.45rem;
+      font-weight: 300;
+    }
+  }
+  &__contact-text {
+    font-size: 2.1rem;
+    color: #232639;
+    font-weight: 600;
+    line-height: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  &-information {
+    height: 72%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  &-paragraph {
+    font-size: 1.3rem;
+    color: #878993;
+    margin-left: 1rem;
+    font-weight: 400;
+  }
+  &-trial a {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    background-color: #fff;
+    color: #ff8a65;
+    border: 1px solid transparent;
+    border-color: #ff8a65;
+    border-width: 1px;
+    text-decoration: none;
+    padding: 1.5rem 5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: all 0.5s ease-in-out;
+    border-radius: 4px;
+    &:hover {
+      background-color: #f9d342;
+      color: rgb(34, 45, 50);
+    }
+  }
+  &-compare {
+    margin-top: 2rem;
+    //margin-bottom: 2rem;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: rgba(255, 138, 101, 0.6);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: #ff8a65;
+    }
+  }
+}
+.bi-green {
+  font-size: 1.5rem;
+  color: #ff8a65;
+}
+
+@media only screen and (max-width: 600px) {
+  .pricing__section {
+    &-card {
+      width: 100%;
+      //height: 68rem;
+    }
+    &__intro {
+      &-text1 {
+        font-size: 2rem;
+      }
+      &-price {
+        font-size: 5.6rem;
+      }
+      &-text2 {
+        font-size: 1.8rem;
+      }
+    }
+    &-paragraph {
+      font-size: 1.8rem;
+    }
+    &-compare {
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+    }
+  }
+  .bi-green {
+    font-size: 2rem;
+  }
+}

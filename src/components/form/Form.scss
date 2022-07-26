@@ -1,0 +1,112 @@
+.form {
+  &__control input {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    font-size: 1.5rem;
+    background-clip: padding-box;
+    border: 1px solid #dadbde;
+    border-radius: 0.1875rem;
+    width: 100%;
+    height: calc(2.3em + 2rem + 2px);
+    padding: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #232639;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    &:focus {
+      // border: 1px solid rgb(34, 45, 50);
+      box-shadow: 0px 0px 6px 3px rgba(34, 45, 50, 0.22);
+    }
+  }
+}
+
+.left-checkmark {
+  margin-left: 1rem;
+}
+
+.form__control-input1 {
+  animation: input 0.4s ease-out;
+}
+.form__control-input2 {
+  animation: input 0.5s ease-out;
+}
+.form__control-input3 {
+  animation: input 0.7s ease-out;
+}
+.form__control-input4 {
+  animation: input 0.9s ease-out;
+}
+.form__control-input5 {
+  animation: input 1.1s ease-out;
+}
+.form__control.invalid input {
+  border-color: red;
+  background: #dfc1c1;
+}
+
+@keyframes input {
+  from {
+    opacity: 0;
+    transform: translateY(-15rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.swal-title {
+  margin: 0px;
+  font-size: 4rem;
+  color: rgb(34, 45, 50);
+}
+.swal-text {
+  background-color: #f9d342;
+  padding: 1.7rem;
+  border: 1px solid #f9d342;
+  display: block;
+  margin: 2.2rem;
+  text-align: center;
+  color: rgb(34, 45, 50);
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+.swal-button {
+  border: none;
+  outline: none;
+  padding: 1rem 2.2rem;
+  border-radius: 2px;
+  background-color: rgb(34, 45, 50);
+  font-size: 1.6rem;
+  margin-left: 2rem;
+  color: #f9d342;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .form {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .swal-title {
+    margin: 0px;
+    font-size: 2rem;
+    color: rgb(34, 45, 50);
+  }
+  .swal-text {
+    background-color: #f9d342;
+    padding: 1.7rem;
+    border: 1px solid #f9d342;
+    display: block;
+    margin: 2.2rem;
+    text-align: center;
+    color: black;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+  }
+}

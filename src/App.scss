@@ -1,0 +1,178 @@
+*,
+*:before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+}
+//@media only screen and (max-width: 600px){
+//  html{
+//    font-size: 7px;
+//  }
+//}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f9d342;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+dl,
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+.inner__container {
+  padding-left: 18%;
+  padding-top: 8rem;
+  padding-right: 2rem;
+}
+// Animation css
+.animation1 {
+  animation: bump1 0.8s ease-out;
+}
+.animation2 {
+  animation: bump2 0.8s ease-out;
+}
+@keyframes bump1 {
+  from {
+    opacity: 0;
+    transform: translateY(-8rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes bump2 {
+  from {
+    opacity: 0;
+    transform: translateY(-15rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 81);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 0, 81);
+}
+
+.loading {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f4c3;
+  // color: white;
+}
+
+div.spinner {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  background: #00251a;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+div.spinner div {
+  width: 6%;
+  height: 16%;
+  background: #eeff41;
+  position: absolute;
+  left: 49%;
+  top: 43%;
+  opacity: 0;
+  border-radius: 50px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  animation: fade 1s linear infinite;
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.25;
+  }
+}
+
+div.spinner div.bar1 {
+  transform: rotate(0deg) translate(0, -130%);
+  animation-delay: 0s;
+}
+
+div.spinner div.bar2 {
+  transform: rotate(30deg) translate(0, -130%);
+  animation-delay: -0.9167s;
+}
+
+div.spinner div.bar3 {
+  transform: rotate(60deg) translate(0, -130%);
+  animation-delay: -0.833s;
+}
+div.spinner div.bar4 {
+  transform: rotate(90deg) translate(0, -130%);
+  animation-delay: -0.7497s;
+}
+div.spinner div.bar5 {
+  transform: rotate(120deg) translate(0, -130%);
+  animation-delay: -0.667s;
+}
+div.spinner div.bar6 {
+  transform: rotate(150deg) translate(0, -130%);
+  animation-delay: -0.5837s;
+}
+div.spinner div.bar7 {
+  transform: rotate(180deg) translate(0, -130%);
+  animation-delay: -0.5s;
+}
+div.spinner div.bar8 {
+  transform: rotate(210deg) translate(0, -130%);
+  animation-delay: -0.4167s;
+}
+div.spinner div.bar9 {
+  transform: rotate(240deg) translate(0, -130%);
+  animation-delay: -0.333s;
+}
+div.spinner div.bar10 {
+  transform: rotate(270deg) translate(0, -130%);
+  animation-delay: -0.2497s;
+}
+div.spinner div.bar11 {
+  transform: rotate(300deg) translate(0, -130%);
+  animation-delay: -0.167s;
+}
+div.spinner div.bar12 {
+  transform: rotate(330deg) translate(0, -130%);
+  animation-delay: -0.0833s;
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    max-width: 415px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}

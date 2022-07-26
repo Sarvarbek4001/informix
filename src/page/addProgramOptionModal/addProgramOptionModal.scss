@@ -1,0 +1,44 @@
+.add__program__option {
+  padding-top: 3rem;
+}
+.add__program__option-control {
+  margin-bottom: 1rem;
+}
+.add__program__option-control input {
+  width: 100%;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  &:focus {
+    box-shadow: 0px 0px 2px rgb(0, 0, 81);
+  }
+}
+.add__program__option-control select {
+  border: none;
+  padding: 0.5rem 1.4rem;
+  font-size: 1.6rem;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+.add__program--send-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.add__program--send-btn button {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1.4rem;
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  transition: all 0.5s ease-in-out;
+}

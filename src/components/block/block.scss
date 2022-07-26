@@ -1,0 +1,48 @@
+.block {
+  padding: 5rem 0;
+  &__section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &-items {
+      width: 59.4rem;
+    }
+    &-heading {
+      color: rgb(34, 45, 50);
+      font-size: 3.2rem;
+      margin: 3.2rem 0;
+    }
+    &-text {
+      color: rgb(34, 45, 50);
+      font-size: 1.8rem;
+      margin-bottom: 3.2rem;
+      line-height: 2.7rem;
+    }
+    &-btn {
+      margin-bottom: 2rem;
+    }
+  }
+}
+.flex-direction {
+  flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 600px) {
+  .block {
+    &__section {
+      &-img img {
+        width: 100%;
+      }
+      &-items {
+        text-align: center;
+        width: 100%;
+      }
+      &-heading {
+        text-align: center;
+      }
+      &-text {
+        text-align: center;
+      }
+    }
+  }
+}

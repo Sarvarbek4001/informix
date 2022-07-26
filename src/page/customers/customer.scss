@@ -1,0 +1,49 @@
+.table__btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  & button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.7rem 0.7rem;
+    font-size: 1.4rem;
+    border-radius: 0.4rem;
+  }
+  &-save {
+    background-color: #870000;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.2);
+      background-color: rgba(135, 0, 0, 0.7);
+    }
+  }
+  &-delete {
+    background-color: rgb(34, 45, 50);
+
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.2);
+      background-color: rgba(34, 45, 50, 0.7);
+    }
+  }
+}
+
+.bi-pencil-square,
+.bi-trash {
+  font-size: 1.6rem;
+  color: #f9d342;
+  margin-right: 0.2rem;
+}
+
+.swal-button--cancel {
+  border: none;
+  outline: none;
+  background-color: #7f0000;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: black;
+  }
+}

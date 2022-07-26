@@ -1,0 +1,19 @@
+.block__card--button {
+  width: 50%;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  background-color: rgb(34, 44, 55);
+  color: #f9d342;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  &:hover {
+    border: 1px solid rgb(34, 44, 55);
+    color: rgb(34, 44, 55);
+    background-color: #ffffffff;
+  }
+}

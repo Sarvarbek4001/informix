@@ -1,0 +1,106 @@
+.banner__add-select {
+  outline: none;
+  border: none;
+  padding: 0.6rem;
+  border: 1px solid rgb(34, 45, 50);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  border-radius: 4px;
+  background-color: rgb(34, 45, 50);
+  color: #fff;
+}
+.banner__add-btn {
+  display: flex;
+  align-items: center;
+  outline: none;
+  border: none;
+  padding: 0.85rem 2.6rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+  background-color: rgb(34, 45, 50);
+  color: #fff;
+  margin-left: 1.5rem;
+  border-radius: 4px;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    background-color: rgba(34, 45, 50, 0.7);
+    border-radius: 4px;
+  }
+}
+.banner__add-items {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.banner__table {
+  margin-top: 5rem;
+  height: 50rem;
+  overflow: auto;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.banner__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+  padding: 0.5rem;
+}
+
+.banner__title {
+  display: flex;
+  align-items: center;
+  &--text {
+    font-size: 1.4rem;
+    // font-style: italic;
+    letter-spacing: 1px;
+  }
+  &--num {
+    font-size: 1.4rem;
+    margin-right: 1rem;
+    font-weight: 500;
+  }
+}
+.banner__button--items {
+  width: 8rem;
+  display: flex;
+  margin-left: 1rem;
+}
+.banner__button-update,
+.banner__button-delete {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.banner__button-update {
+  background-color: rgb(34, 45, 50);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: rgba(34, 45, 50, 0.7);
+    transform: scale(1.1);
+  }
+}
+.banner__button-delete {
+  padding: 0.8rem;
+  margin-left: 0.5rem;
+  background-color: rgb(249, 211, 66);
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: rgba(249, 211, 66, 0.7);
+    transform: scale(1.1);
+  }
+}
+.bi-pen {
+  color: #f9d342;
+  font-size: 1.6rem;
+}
+.bi-black {
+  color: black;
+  font-size: 2rem;
+}
