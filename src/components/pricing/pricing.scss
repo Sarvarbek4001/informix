@@ -1,30 +1,47 @@
+.pricing{
+  background-color:#F0F0F0;
+  padding: 5rem;
+}
 .pricing__section {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   &-card {
     width: 28rem;
-    min-height: 66rem;
+    min-height: 72rem;
     background-color: #ffffff;
     margin-top: 3.2rem;
     border-radius: 8px;
     transition: all 0.3s ease-in-out;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     &:hover {
-      background-color: rgb(34, 45, 50);
-      color: #f9d342;
-      transform: translateY(-2rem);
+      transform: translateY(-3rem);
+    }
+    &:hover .pricing__section__intro{
+      background-color: #329EF4;
+      color: #ffffff;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+    &:hover .pricing__section__intro-text1 {
+      color: #ffffff;
+    }
+    &:hover .pricing__section__intro-text2 {
+      color: #ffffff;
     }
   }
   &__intro {
     text-align: center;
     padding: 2.5rem 7.5rem 3.2rem 7.5rem;
     border-bottom: 1px solid rgba(135, 137, 147, 0.4);
+    transition: all 0.3s ease-in-out;
     &-text1 {
       color: #ff8a65;
       font-size: 1.5rem;
       font-weight: 700;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
       margin-bottom: 0.8rem;
+      transition: all 0.3s ease-in-out;
     }
     &-price {
       font-size: 4.6rem;
@@ -35,6 +52,7 @@
       color: #878993;
       font-size: 1.45rem;
       font-weight: 300;
+      transition: all 0.3s ease-in-out;
     }
   }
   &__contact-text {
@@ -45,7 +63,7 @@
     margin-bottom: 1.5rem;
   }
   &-information {
-    height: 72%;
+    height: 73%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -79,20 +97,18 @@
     transition: all 0.5s ease-in-out;
     border-radius: 4px;
     &:hover {
-      background-color: #f9d342;
-      color: rgb(34, 45, 50);
+      background-color: #ff8a65;
+      color: #ffffff;
     }
   }
   &-compare {
     margin-top: 2rem;
-    //margin-bottom: 2rem;
     display: inline-block;
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: 700;
     color: rgba(255, 138, 101, 0.6);
     transition: all 0.3s ease-in-out;
-
     &:hover {
       color: #ff8a65;
     }
@@ -104,10 +120,15 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .pricing{
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
   .pricing__section {
     &-card {
       width: 100%;
-      //height: 68rem;
     }
     &__intro {
       &-text1 {

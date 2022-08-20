@@ -1,6 +1,7 @@
 import React, { useRef, useContext } from "react";
 import { AppBar, Toolbar, useMediaQuery, useTheme } from "@mui/material";
 import DrawerComp from "./Drawer";
+import { Link, animateScroll as scroll } from "react-scroll";
 import Logo from "../../assets/logo/ULogo.png";
 import "./navbar.scss";
 import LocalizationContext from "../../context/LocalizationContext";
@@ -14,7 +15,7 @@ const Header = (props) => {
   };
   return (
     <React.Fragment>
-      <AppBar sx={{ background: "rgb(34,45,50)" }}>
+      <AppBar sx={{ background: "#2196F3" }} >
         <div>
           <Toolbar
             sx={{
@@ -37,70 +38,66 @@ const Header = (props) => {
               <>
                 <ul className="header__list">
                   <li className="header__item">
-                    <a
-                      className="header__link"
-                      href="/"
-                      style={{
-                        textDecoration: "none",
-                        fontSize: "18px",
-                      }}
-                    >
-                      {props.content[props.lang].navbar.home}
-                    </a>
+                      <Link
+                          to="home"
+                          smooth={true}
+                          offset={0}
+                          duration={500}
+                          className="header__link "
+                      >
+                          {props.content[props.lang].navbar.home}
+                      </Link>
                   </li>
                   <li className="header__item">
-                    <a
-                      className="header__link"
-                      href="#section1"
-                      style={{
-                        textDecoration: "none",
-                        fontSize: "18px",
-                      }}
-                    >
-                      {props.content[props.lang].navbar.section1}
-                    </a>
+                      <Link
+                          to="features"
+                          smooth={true}
+                          offset={0}
+                          duration={500}
+                          className="header__link "
+                      >
+                          {props.content[props.lang].navbar.section1}
+                      </Link>
                   </li>
                   <li className="header__item">
-                    <a
-                      className="header__link"
-                      href="#section2"
-                      style={{
-                        textDecoration: "none",
-                        fontSize: "18px",
-                      }}
-                    >
-                      {props.content[props.lang].navbar.section2}
-                    </a>
+                      <Link
+                          to="services"
+                          smooth={true}
+                          offset={0}
+                          duration={500}
+                          className="header__link "
+                      >
+                          {props.content[props.lang].navbar.section2}
+                      </Link>
                   </li>
                   <li className="header__item">
-                    <a
-                      className="header__link"
-                      href="#price"
-                      style={{
-                        textDecoration: "none",
-                        fontSize: "18px",
-                      }}
-                    >
-                      {props.content[props.lang].navbar.price}
-                    </a>
+                      <Link
+                          to="prices"
+                          smooth={true}
+                          offset={0}
+                          duration={500}
+                          className="header__link "
+                      >
+                          {props.content[props.lang].navbar.price}
+                      </Link>
                   </li>
                   <li className="header__item">
-                    <a
-                      className="header__link"
-                      href="#contactus"
-                      style={{
-                        textDecoration: "none",
-                        fontSize: "18px",
-                      }}
-                    >
-                      {props.content[props.lang].navbar.contact}
-                    </a>
+                      <Link
+                          to="contactus"
+                          smooth={true}
+                          offset={0}
+                          duration={500}
+                          className="header__link "
+                      >
+                          {props.content[props.lang].navbar.contact}
+                      </Link>
                   </li>
                 </ul>
                 <select
                   ref={langRef}
                   className="language__select"
                   onChange={handleSelectChange}
+                  defaultValue={ctx.lang}
                 >
                   <option value="uz">UZ</option>
                   <option value="ru">RU</option>

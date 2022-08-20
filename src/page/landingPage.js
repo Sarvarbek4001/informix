@@ -73,12 +73,12 @@ function LandingPage() {
         <div>
           <Header lang={lang} content={Content} />
           <Order lang={lang} content={Content} />
-          <Block block={block1} lang={lang} content={Content} id="section1" />
+          <Block block={block1} lang={lang} content={Content} name="features" />
           <Banner banner={banner1} />
-          <Block block={block2} lang={lang} content={Content} id="section2" />
+          <Block block={block2} lang={lang} content={Content} name="services" />
           <Banner banner={banner2} />
           <Brand />
-          <Pricing />
+          <Pricing lang={lang} content={Content} />
           <Contact lang={lang} content={Content} />
         </div>
       )}

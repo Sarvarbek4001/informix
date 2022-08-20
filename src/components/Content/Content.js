@@ -31,6 +31,10 @@ const Content = {
       price: "Prices",
       contact: "Contact",
     },
+    prices: {
+      button: "Start free trial",
+      plan_link_text: "Compare plans",
+    },
   },
   ru: {
     block: {
@@ -63,6 +67,10 @@ const Content = {
       section2: "Услуги",
       price: "Цены",
       contact: "Контакт",
+    },
+    prices: {
+      button: "Начать бесплатную пробную версию",
+      plan_link_text: "Сравнить планы",
     },
   },
   uz: {
@@ -98,6 +106,10 @@ const Content = {
       price: "Narxlar",
       contact: "Aloqa",
     },
+    prices: {
+      button: "Bepul sinovni boshlang",
+      plan_link_text: "Rejalarni solishtiring",
+    }
   },
 };
 export default Content;

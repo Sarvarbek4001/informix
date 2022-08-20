@@ -5,7 +5,7 @@ import Checkmark from "../checkmark/checkmark";
 
 function Order(props) {
   return (
-    <div className="order">
+    <div name="home" className="order">
       <div className="order__section container">
         <div className="order__items animation1">
           <h1 className="order__heading ">

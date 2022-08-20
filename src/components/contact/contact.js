@@ -2,7 +2,7 @@ import React from "react";
 import "./contact.scss";
 function Contact(props) {
   return (
-    <section className="contact" id="contactus">
+    <section className="contact" name="contactus">
       <div className="section__contact container">
         <div className="contact__wrapper-information">
           <h3 className="company__name">

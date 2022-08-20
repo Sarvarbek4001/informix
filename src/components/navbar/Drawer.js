@@ -7,9 +7,11 @@ import {
   ListItemIcon,
   ListItemText,
 } from "@mui/material";
+import { Link, animateScroll as scroll } from "react-scroll";
 import LocalizationContext from "../../context/LocalizationContext";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+
 const DrawerComp = (props) => {
   const [openDrawer, setOpenDrawer] = useState(false);
   const langRef = useRef();
@@ -33,76 +35,69 @@ const DrawerComp = (props) => {
             paddingBottom: "30px",
           }}
         >
-          <ListItemButton sx={{ display: "inline-block", textAlign: "center" }}>
+          <ListItemButton sx={{ display: "inline-block", textAlign: "center",fontSize:'18px' }}>
             <ListItemIcon>
-              <a
-                href="#"
-                style={{
-                  width: "100%",
-                  textAlign: "center",
-                  textDecoration: "none",
-                  fontSize: "18px",
-                  padding: "0 20px 0 20px",
-                }}
-              >
-                {props.content[props.lang].navbar.home}
-              </a>
+                <Link
+                    to="home"
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                    className="header__link "
+                >
+                    {props.content[props.lang].navbar.home}
+                </Link>
             </ListItemIcon>
           </ListItemButton>
-          <ListItemButton sx={{ display: "inline-block", textAlign: "center" }}>
+          <ListItemButton sx={{ display: "inline-block", textAlign: "center",fontSize:'18px' }}>
             <ListItemIcon>
-              <a
-                href="#section1"
-                style={{
-                  textDecoration: "none",
-                  fontSize: "18px",
-                  padding: "0 20px 0 20px",
-                }}
-              >
-                {props.content[props.lang].navbar.section1}
-              </a>
+                <Link
+                    to="features"
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                    className="header__link "
+                >
+                    {props.content[props.lang].navbar.section1}
+                </Link>
             </ListItemIcon>
           </ListItemButton>
-          <ListItemButton sx={{ display: "inline-block", textAlign: "center" }}>
+          <ListItemButton sx={{ display: "inline-block", textAlign: "center",fontSize:'18px' }}>
             <ListItemIcon>
-              <a
-                href="#section2"
-                style={{
-                  textDecoration: "none",
-                  fontSize: "18px",
-                  padding: "0 20px 0 20px",
-                }}
-              >
-                {props.content[props.lang].navbar.section2}
-              </a>
+                <Link
+                    to="services"
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                    className="header__link "
+                >
+                    {props.content[props.lang].navbar.section2}
+                </Link>
             </ListItemIcon>
           </ListItemButton>
-          <ListItemButton sx={{ display: "inline-block", textAlign: "center" }}>
+          <ListItemButton sx={{ display: "inline-block", textAlign: "center",fontSize:'18px' }}>
             <ListItemIcon>
-              <a
-                href="#price"
-                style={{
-                  textDecoration: "none",
-                  fontSize: "18px",
-                  padding: "0 20px 0 20px",
-                }}
-              >
-                {props.content[props.lang].navbar.price}
-              </a>
+                <Link
+                    to="prices"
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                    className="header__link "
+                >
+                    {props.content[props.lang].navbar.price}
+                </Link>
             </ListItemIcon>
           </ListItemButton>
-          <ListItemButton sx={{ display: "inline-block", textAlign: "center" }}>
+          <ListItemButton sx={{ display: "inline-block", textAlign: "center",fontSize:'18px' }}>
             <ListItemIcon>
-              <a
-                href="#contactus"
-                style={{
-                  textDecoration: "none",
-                  fontSize: "18px",
-                  padding: "0 20px 0 20px",
-                }}
-              >
-                {props.content[props.lang].navbar.contact}
-              </a>
+                <Link
+                    to="contactus"
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                    className="header__link "
+                >
+                    {props.content[props.lang].navbar.contact}
+                </Link>
             </ListItemIcon>
           </ListItemButton>
         </List>
@@ -110,7 +105,7 @@ const DrawerComp = (props) => {
           ref={langRef}
           className="language__select"
           onChange={handleSelectChange}
-          style={{ marginBottom: "5px" }}
+          style={{ marginBottom: "5px",textAlign:'center',backgroundColor:"#2196F3",color:'white' }}
         >
           <option value="uz">UZ</option>
           <option value="ru">RU</option>
@@ -119,16 +114,16 @@ const DrawerComp = (props) => {
         <button
           style={{
             position: "absolute",
-            top: "10px",
+            top: "5px",
             right: "20px",
-            padding: "8px 8px 5px 8px",
             backgroundColor: "#ffffff",
-            border: "1px solid rgb(34,45,50)",
-            borderRadius: "4px",
+              border:"none",
+              cursor:'pointer',
+
           }}
           onClick={() => setOpenDrawer(!openDrawer)}
         >
-          <CloseIcon fontSize="large" />
+          <CloseIcon sx={{fontSize: 30}} />
         </button>
       </Drawer>
       <IconButton

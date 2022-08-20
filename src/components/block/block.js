@@ -8,7 +8,7 @@ function Block(props) {
   return (
     <>
       {props.block.map((item, index) => (
-        <section className="block" key={index} id={props.id}>
+        <section className="block" key={index} name={props.name}>
           <div
             className={`block__section container ${
               item.b_row_reverse === true ? "flex-direction" : null

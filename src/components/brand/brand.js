@@ -3,6 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./brand.scss";
+
+
+
 function Brand() {
   const [brandId, setBrandId] = useState([]);
 
@@ -35,11 +38,13 @@ function Brand() {
     ));
   let settings = {
     className: "center",
-    dots: false,
+    dots: true,
+    infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
+
     responsive: [
       {
         breakpoint: 600,

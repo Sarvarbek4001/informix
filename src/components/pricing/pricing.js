@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import LocalizationContext from "../../context/LocalizationContext";
 import "./pricing.scss";
 import Checkmark from "../checkmark/checkmark";
-function Pricing() {
+function Pricing(props) {
   const [data, setData] = useState([]);
   const ctx = useContext(LocalizationContext);
 
@@ -19,7 +19,7 @@ function Pricing() {
     fetchData();
   }, []);
   return (
-    <section className="pricing" id="price">
+    <section className="pricing" name="prices">
       <div className="pricing__section container">
         {data.length &&
           data.map((item,index) => (
@@ -84,11 +84,11 @@ function Pricing() {
                       ))}
                   {}
                   <a href="#" className="pricing__section-compare">
-                    Compare plans
+                    {props.content[props.lang].prices.plan_link_text}
                   </a>
                 </div>
                 <div className="pricing__section-trial">
-                  <a href="#">START FREE TRIAL</a>
+                  <a href="#">{props.content[props.lang].prices.button}</a>
                 </div>
               </div>
             </div>
